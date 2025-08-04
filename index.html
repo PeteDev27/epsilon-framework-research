@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Epsilon Framework - Simple Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+
+    <div id="video-container" class="w-full max-w-4xl aspect-video bg-black rounded-lg shadow-2xl overflow-hidden relative">
+        
+        <!-- 
+            SIMPLIFIED VIDEO TAG FOR TESTING
+            - The 'controls' attribute tells the browser to use its own native play button, volume, etc.
+            - All 'onclick' and custom JavaScript has been removed for this test.
+        -->
+        <video 
+            id="video-player" 
+            class="w-full h-full object-cover" 
+            preload="auto" 
+            controls>
+            
+            <!-- FINAL, STABLE VIDEO SOURCE FROM THE INTERNET ARCHIVE -->
+            <source src="https://archive.org/download/pexels-engin-akyurt-1435735/pexels-engin-akyurt-1435735.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+</body>
+</html>
